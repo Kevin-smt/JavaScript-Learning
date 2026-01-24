@@ -11,7 +11,7 @@
 let array3 = [1, 2, 3,30,33]
 let array4 = [2, 30, 1]
 
-function MergeRemove(array1, array2) {
+function mergeandremove(array1, array2) {
     for (let i = 0; i < array1.length; i++) {
         array2.push(array1[i]);
     }
@@ -22,7 +22,7 @@ function MergeRemove(array1, array2) {
 
 }
 
-MergeRemove(array3,array4)
+mergeandremove(array3,array4)
 
 
 
