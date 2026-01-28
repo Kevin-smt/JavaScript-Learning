@@ -5,3 +5,19 @@
 // Example string : 'Web Development Tutorial'
 // Expected Output : 'Development'
 
+let name = 'Web Development Tutorial'
+
+
+let max = 0;
+let total = 0;
+
+for (let i = 0;i<name.length;i++){
+
+    total = total + 1;
+    if(name[i] == ''){
+        max = total;
+        total = 0;
+    }
+}
+console.log(name[0])
+console.log(max);
