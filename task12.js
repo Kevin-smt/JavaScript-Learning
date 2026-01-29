@@ -5,4 +5,16 @@
 
 // Example string: 'webmaster'
 // Expected Output: 'abeemrstw'
-// Man Patel, 20 Jun 2022, 14:25
+
+let str = 'webmaster';
+let arr = [];
+
+for(let i = 0;i<str.length;i++){
+    arr.push(str[i]);
+    arr.sort();
+
+}
+let str2 = arr.join('');
+
+// console.log(arr)
+console.log(str2)

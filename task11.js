@@ -6,5 +6,15 @@
 // "0 is even"
 // "1 is odd"
 // "2 is even"
-// ----------
-// Man Patel, 20 Jun 2022, 14:15
+
+for(let i = 0;i<=15;i++){
+    if(i%2 == 0){
+        console.log(i+ " is even");
+    }
+    else{
+        console.log(i+ " is odd");
+    }
+}
+
+
+

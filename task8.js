@@ -4,3 +4,16 @@
 
 // Sample arguments : ('w3resource.com', 'o')
 // Expected output : 2
+
+
+function findOcc(str, find) {
+    let count = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] == find) {
+            count++;
+        }
+    }
+    return count
+}
+
+console.log(findOcc('w3resooource.cooom', 'o'))

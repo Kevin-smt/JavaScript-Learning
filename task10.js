@@ -4,4 +4,16 @@
 
 // Example : range(2, 9)
 // Expected Output : [3, 4, 5, 6, 7, 8]
-// Man Patel, 20 Jun 2022, 12:26
+
+
+function range(fn, sn) {
+
+    let arr = [];
+    for (let i = fn; i < sn - 1; i++) {
+        arr.push(i + 1);
+    }
+    return arr;
+
+}
+console.log(range(3,15))
+
