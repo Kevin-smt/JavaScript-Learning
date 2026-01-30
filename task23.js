@@ -1,7 +1,7 @@
-Create a function that moves all capital letters to the front of a word.
+// Create a function that moves all capital letters to the front of a word.
 
-Example: 
+// Example: 
 
-capToFront("hApPy") ➞ "APhpy"
-capToFront("moveMENT") ➞ "MENTmove"
-capToFront("shOrtCAKE") ➞ "OCAKEshrt"
+// capToFront("hApPy") ➞ "APhpy"
+// capToFront("moveMENT") ➞ "MENTmove"
+// capToFront("shOrtCAKE") ➞ "OCAKEshrt"

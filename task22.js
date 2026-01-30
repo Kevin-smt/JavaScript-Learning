@@ -1,7 +1,7 @@
-Create a function that returns the number of characters shared between two words.
+// Create a function that returns the number of characters shared between two words.
 
-Example:
+// Example:
 
-sharedLetters("apple", "meaty") ➞ 2   // Since "ea" is shared between "apple" and "meaty".
-sharedLetters("fan", "forsook") ➞ 1
-sharedLetters("spout", "shout") ➞ 4
+// sharedLetters("apple", "meaty") ➞ 2   // Since "ea" is shared between "apple" and "meaty".
+// sharedLetters("fan", "forsook") ➞ 1
+// sharedLetters("spout", "shout") ➞ 4
