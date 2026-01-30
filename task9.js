@@ -6,17 +6,28 @@
 // For example, 5! = 5 x 4 x 3 x 2 x 1 = 120
 
 
+// function findFact(num) {
+//     let fact = 1;
+//     for (let i = num; i > 0; i--) {
+//         if (num != 0) {
+//             fact *= num;
+//             num--;
+
+//         }
+
+//     }
+//     return fact
+// }
+
 function findFact(num) {
-    let fact = 1;
-    for (let i = num; i > 0; i--) {
-        if (num != 0) {
-            fact *= num;
-            num--;
-
-        }
-
+    
+    if(num == 0 || num == 1){
+        return 1
     }
-    return fact
+    return  num * findFact(num-1)
 }
 
-console.log(findFact(7))
+
+
+
+console.log(findFact(5))
