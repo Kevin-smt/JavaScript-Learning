@@ -9,7 +9,12 @@
 // timeToEat("5:50 a.m.") ➞ [1, 10]
 // // 1 hour and 10 minutes until the next meal, breakfast
 
-let time = '7:01 p.m.'
+// let time = '7:01 p.m.'
+
+
+function timeToEat(time){
+
+
 
 let devide = time.split(' ')
 let temptime = devide[0].split(':');
@@ -52,4 +57,6 @@ let rmMn = diff % 60
 
 let finaltime = [rmhr, rmMn]
 
-console.log(finaltime)
+return finaltime
+}
+console.log(timeToEat("5:50 a.m."));
