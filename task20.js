@@ -10,3 +10,13 @@
 
 // NOTE: in the third z will be replaced with a
 
+let str = "mubashirh";
+let p1 = str.substring(0,3);
+let p2 = str.substring(3,6);
+let p3 = str.substring(6,9); 
+
+
+
+console.log(p1)
+console.log(p2)
+console.log(p3)

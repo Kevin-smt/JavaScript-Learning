@@ -27,7 +27,12 @@ let book = {
   "Chapter 2" : 15,
   "Chapter 3" : 37
 }
-console.log(nearestChapter(book, 10))
+console.log(nearestChapter({
+  "New Beginnings" : 1,
+  "Strange Developments" : 62,
+  "The End?" : 194,
+  "The True Ending" : 460
+}, 450))
 
 function nearestChapter(book, find) {
     let temparr = [];

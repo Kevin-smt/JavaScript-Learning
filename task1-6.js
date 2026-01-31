@@ -4,20 +4,16 @@
 
 // if you accept 025468 the output should be 0-254-6-8.
 
-let Strnum = "025468";
+let Strnum = "025468568";
+let result = ''
 
-// console.log(Strnum.charAt(1))
-// console.log(Strnum.charAt(1))
+for (let j = 0; j < Strnum.length; j++) {
 
+    result += Strnum[j];
 
-for(let i=0;i<Strnum.length;i++){
-
-    if( ((Strnum.indexOf(i) % 2 ) == 0 ) && ( ( Strnum.indexOf(i+1) % 2 ) == 0)){
-        console.log(`-`);
-        console.log(Strnum.indexOf(i));
-        console.log(Strnum.indexOf(i+1))
-    }else{
-        console.log("hello")
-
+    if ((Strnum[j] % 2) == 0 && Strnum[j + 1] % 2 == 0) {
+        result += '-'
     }
 }
+
+console.log(result)
