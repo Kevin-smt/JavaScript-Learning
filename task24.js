@@ -20,3 +20,33 @@
 //   "Chapter 1a" : 1,
 //   "Chapter 1b" : 5
 // }, 3) ➞ "Chapter 
+
+
+let book = {
+     "Chapter 1" : 1,
+  "Chapter 2" : 15,
+  "Chapter 3" : 37
+}
+console.log(nearestChapter(book, 10))
+
+function nearestChapter(book, find) {
+    let temparr = [];
+
+    let entries = Object.entries(book)
+
+    for (let i = 0; i < entries.length; i++) {
+        temparr.push(Math.abs(find - entries[i][1]))
+    }
+
+    let mini = temparr.indexOf(Math.min(...temparr))
+
+    return entries[mini][0]
+
+}
+
+
+
+// console.log(Object.keys(book))
+// console.log(Math.abs(find - entries[0][1]))
+// console.log(temparr);
+// console.log(mini)

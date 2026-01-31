@@ -41,34 +41,34 @@
 // }
 
 let awardPrizes = {
-  "Joshua" : 45,
-  "Alex" : 85,
-  "Eric" : 43,
-  "kevin":99,
+  "Joshua": 45,
+  "Alex": 85,
+  "Eric": 43,
+  "kevin": 99,
   "sam": 70
 }
 
 let entries = Object.entries(awardPrizes);
 
-console.log(entries.sort((a,b) => b[1]- a[1]));
+console.log(entries.sort((a, b) => b[1] - a[1]));
 
 let result = {}
 
-for(let i=0;i<entries.length;i++){
-  
-  let name  = entries[i][0];
+for (let i = 0; i < entries.length; i++) {
+
+  let name = entries[i][0];
   let score = entries[i][1];
 
-  if(i==0){
+  if (i == 0) {
     result[name] = 'Gold - ' + score
   }
-  else if(i==1){
+  else if (i == 1) {
     result[name] = 'Bronze - ' + score
   }
-  else if(i==2){
+  else if (i == 2) {
     result[name] = 'Silver - ' + score
   }
-  else{
+  else {
     result[name] = 'Participation - ' + score
   }
 

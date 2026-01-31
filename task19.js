@@ -12,51 +12,49 @@
 // let time = '7:01 p.m.'
 
 
-function timeToEat(time){
+function timeToEat(time) {
+
+    let devide = time.split(' ')
+    let temptime = devide[0].split(':');
+
+    let hr = Number(temptime[0]);
+    let min = Number(temptime[1]);
 
 
+    console.log(hr, min)
 
-let devide = time.split(' ')
-let temptime = devide[0].split(':');
+    if (devide[1] === 'p.m.' && hr !== 12) hr += 12;
+    if (devide[1] === 'a.m.' && hr === 12) hr = 0;
 
-let hr = Number(temptime[0]);
-let min = Number(temptime[1]);
+    let currtime = hr * 60 + min;
 
+    let breakfast = 7 * 60;
+    let lunch = 12 * 60;
+    let dinner = 19 * 60;
 
-console.log(hr, min)
+    let rmtime;
 
-if (devide[1] === 'p.m.' && hr !== 12) hr += 12;
-if (devide[1] === 'a.m.' && hr === 12) hr = 0;
-
-let currtime = hr * 60 + min;
-
-let breakfast = 7 * 60;
-let lunch = 12 * 60;
-let dinner = 19 * 60;
-
-let rmtime;
-
-if (currtime < breakfast) {
-    rmtime = breakfast;
-}
-else if (currtime < lunch) {
-    rmtime = lunch;
-}
-else if (currtime < dinner) {
-    rmtime = dinner;
-}
-else {
-    rmtime = breakfast + 1440;
-}
+    if (currtime < breakfast) {
+        rmtime = breakfast;
+    }
+    else if (currtime < lunch) {
+        rmtime = lunch;
+    }
+    else if (currtime < dinner) {
+        rmtime = dinner;
+    }
+    else {
+        rmtime = breakfast + 1440;
+    }
 
 
-let diff = rmtime - currtime;
+    let diff = rmtime - currtime;
 
-let rmhr = Math.floor(diff / 60)
-let rmMn = diff % 60
+    let rmhr = Math.floor(diff / 60)
+    let rmMn = diff % 60
 
-let finaltime = [rmhr, rmMn]
+    let finaltime = [rmhr, rmMn]
 
-return finaltime
+    return finaltime
 }
 console.log(timeToEat("5:50 a.m."));

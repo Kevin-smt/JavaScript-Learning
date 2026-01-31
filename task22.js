@@ -6,34 +6,38 @@
 // sharedLetters("fan", "forsook") ➞ 1
 // sharedLetters("spout", "shout") ➞ 4
 
-let word1 = 'apple';
-let word2 = 'mleaty';
+let word1 = 'spout';
+let word2 = 'shout';
 
-let count = 0;
+console.log(commonLatters(word1,word2))
 
-if (word1.length >= word2.length) {
+function commonLatters(word1, word2) {
+    let count = 0;
 
-    for (let i = 0; i < word1.length; i++) {
-        for (let j = 0; j < word2.length; j++) {
+    if (word1.length >= word2.length) {
 
-            if (word1[i] == word2[j]) {
-                console.log(word1[i])
-                count++;
+        for (let i = 0; i < word1.length; i++) {
+            for (let j = 0; j < word2.length; j++) {
+
+                if (word1[i] == word2[j]) {
+                    console.log(word1[i])
+                    count++;
+                }
             }
         }
     }
-}
-else {
-    for (let i = 0; i < word2.length; i++) {
-        for (let j = 0; j < word1.length; j++) {
+    else {
+        for (let i = 0; i < word2.length; i++) {
+            for (let j = 0; j < word1.length; j++) {
 
-            if (word1[i] == word2[j]) {
-                console.log(word1[i])
+                if (word2[i] == word1[j]) {
+                    console.log(word2[i])
 
-                count++;
+                    count++;
+                }
             }
         }
     }
+    return count;
 }
 
-console.log(count)
